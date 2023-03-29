@@ -15,7 +15,6 @@ $requete2->closeCursor();
 // header :
 include('header.php');
 
-
 ?>
 
 <!DOCTYPE html>
