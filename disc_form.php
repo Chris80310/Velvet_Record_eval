@@ -4,7 +4,11 @@ $db = connexionBase();
 $requete = $db->prepare("SELECT * FROM disc join artist on disc.artist_id = artist.artist_id WHERE disc_id = ? ");
 $requete->execute(array($_GET["id"]));
 $myDisc = $requete->fetch(PDO::FETCH_OBJ);
+
 $requete->closeCursor();
+
+// $requete = $db->prepare("SELECT * FROM disc join artist on disc.artist_id = artist.artist_id WHERE disc_id = ? ");
+// $id = $requete->fetchall(PDO::FETCH_OBJ);
 
 // Requête pour le foreach :
 $requete2 = $db->prepare("SELECT * FROM artist");

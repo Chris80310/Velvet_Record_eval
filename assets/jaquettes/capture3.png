@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="capture3_fichiers/style.css">
+    <link href="capture3_fichiers/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body class="bg1">
+
+    <header>
+        <div class="col d-flex justify-content-between my-auto py-auto">
+
+            <!-- banière / logo :  -->
+
+            
+            <div class="col-4">
+                <img src="capture3_fichiers/img-velvet-logo.jpg" width="200px" height="200px">
+            </div>
+
+            <div class="col-4 my-auto py-auto">
+                <h1 id="titre_header">Velvet-record.com</h1>
+            </div>
+ 
+            <div class="col-4">
+                <img src="capture3_fichiers/img-vinyles2.jpg" width="565px" height="200px">
+            </div>
+
+        </div>
+    </header>
+
+    <script src="capture3_fichiers/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="capture3_fichiers/style.css">
+        <link href="capture3_fichiers/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <title>PDO - Détail</title>
+    
+
+    
+
+        <div class="container cont_form_disc_new mt-5 mb-5" style="p-auto">
+
+            <div class="d-flex justify-content-between row ">
+  
+                <form action="script_disc_ajout.php" method="post">
+
+                    <div class="center my-5"><h1><strong>Détails</strong></h1></div>
+
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                            <div class="col my-3">
+                            <img src="capture3_fichiers/Fugazi.jpeg" class="jaquettes" alt="jaquettes" width="300px" height="300px">
+                        </div>
+                                        <br><br>
+
+                    <label for="titre_album"><strong>Titre de l'album : </strong></label><br>
+                    <input type="text" name="nom" id="titre_album" class="col-12" value="Fugazi">
+                    <br><br>
+
+                    <label for="artiste"><strong>Artiste : </strong></label><br>
+                    <input type="text" name="artiste" id="artiste" class="col-12" value="&lt;br /&gt;&lt;font size='1'&gt;&lt;table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'&gt;&lt;tr&gt;&lt;th align='left' bgcolor='#f57900' colspan=" 5"=""><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: Undefined property: stdClass::$artist_name in C:\wamp64\www\eval-Record-PHP--master\disc_detail.php on line <i>61</i>
+Call Stack
+#TimeMemoryFunctionLocation
+10.0007372600{main}(  )...\disc_detail.php<b>:</b>0
+
+"&gt;
+                    <br><br>
+
+                    <label for="annee"><strong>Année : </strong></label><br>
+                    <input type="number" name="nom" id="annee" class="col-12" value="1984">
+                    <br><br>
+
+                    <label for="genre"><strong>Genre : </strong></label><br>
+                    <input type="text" name="nom" id="genre" class="col-12" value="Prog">
+                    <br><br>
+
+                    <label for="label"><strong>Label : </strong></label><br>
+                    <input type="text" name="nom" id="label" class="col-12" value="EMI">
+                    <br><br>
+
+                    <label for="prix"><strong>Prix : </strong></label><br>
+                    <input type="text" name="nom" id="prix" class="col-12" value="14.99">
+                    <br><br>
+
+                    <div class=" col-12 d-flex justify-content-center">
+
+                        <a class="btn btn-primary col-2 mx-5 mt-3" href="http://localhost/eval-Record-PHP--master/artist_form.php?id=1">Modifier</a>
+                        <a class="btn btn-primary col-2 mx-5 mt-3" href="http://localhost/eval-Record-PHP--master/script_artist_delete.php?id=1">Supprimer</a>
+                        <a class="btn btn-primary col-2 mx-5 mt-3" href="http://localhost/eval-Record-PHP--master/discs.php?id=1">Retour</a>
+
+                    </div>
+                    <br><br>
+
+                    <!-- <a href="artist_form.php?id=<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Undefined variable $myArtist in C:\wamp64\www\eval-Record-PHP--master\disc_detail.php on line <i>89</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0007</td><td bgcolor='#eeeeec' align='right'>372600</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp64\www\eval-Record-PHP--master\disc_detail.php' bgcolor='#eeeeec'>...\disc_detail.php<b>:</b>0</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Attempt to read property "artist_id" on null in C:\wamp64\www\eval-Record-PHP--master\disc_detail.php on line <i>89</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0007</td><td bgcolor='#eeeeec' align='right'>372600</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp64\www\eval-Record-PHP--master\disc_detail.php' bgcolor='#eeeeec'>...\disc_detail.php<b>:</b>0</td></tr>
+</table></font>
+">Modifier</a>
+                    <a href="script_artist_delete.php?id=<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Undefined variable $myArtist in C:\wamp64\www\eval-Record-PHP--master\disc_detail.php on line <i>90</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0007</td><td bgcolor='#eeeeec' align='right'>372600</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp64\www\eval-Record-PHP--master\disc_detail.php' bgcolor='#eeeeec'>...\disc_detail.php<b>:</b>0</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Attempt to read property "artist_id" on null in C:\wamp64\www\eval-Record-PHP--master\disc_detail.php on line <i>90</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0007</td><td bgcolor='#eeeeec' align='right'>372600</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp64\www\eval-Record-PHP--master\disc_detail.php' bgcolor='#eeeeec'>...\disc_detail.php<b>:</b>0</td></tr>
+</table></font>
+">Supprimer</a> -->
+
+                </form>
+            </div>
+        </div>
+
+        <script src="capture3_fichiers/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+       
+<iframe src="capture3_fichiers/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; background-color: transparent; color-scheme: light; display: block; max-width: none !important; max-height: none !important; position: absolute !important; height: 3645px; width: 1695px;" scrolling="no" id="firefox-screenshots-selection-iframe" role="dialog"></iframe><iframe src="capture3_fichiers/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; background-color: transparent; color-scheme: light; position: fixed !important; width: 100%; height: 100%; max-width: none !important; max-height: none !important; display: none;" scrolling="no" id="firefox-screenshots-preselection-iframe" role="dialog"></iframe><iframe src="capture3_fichiers/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; background-color: transparent; color-scheme: light; display: none; position: fixed !important; height: 100%; width: 100%; max-width: none !important; max-height: none !important;" scrolling="no" id="firefox-screenshots-preview-iframe" role="dialog"></iframe></body></html>
