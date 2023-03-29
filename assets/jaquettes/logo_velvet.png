@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CSSWARP</title>
+        <style>
+
+            /* Adapt path to font file and format depending on your build settings. */
+            
+            @font-face {
+                font-family: ultra;
+                src: url(path/to/font/file/ultra) format('woff2');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            .warp__placeholder{
+                position: absolute;
+                color: transparent;
+                font-size: .1px;
+            }
+            
+            .warp {
+                display: block;
+                position: relative;
+                width: 620px;
+                height: 450px;
+                font: normal 50px/1 ultra;
+            }
+            
+            [class*='warp__'] {
+                display: block;
+                position: absolute;
+            }
+            
+            .warp__0 {
+                transform-origin: 50% 43px;
+                transform: translate(96.757px,38.4263px) rotate(-0.439759rad);
+            }
+            
+            .warp__1 {
+                transform-origin: 50% 43px;
+                transform: translate(133.5356px,28.058400000000006px) rotate(-0.132444rad);
+            }
+            
+            .warp__2 {
+                transform-origin: 50% 43px;
+                transform: translate(169.1922px,27.777600000000007px) rotate(0.113486rad);
+            }
+            
+            .warp__3 {
+                transform-origin: 50% 43px;
+                transform: translate(191.4582px,34.526399999999995px) rotate(0.355602rad);
+            }
+            
+            .warp__4 {
+                transform-origin: 50% 43px;
+                transform: translate(222.2748px,51.4824px) rotate(0.65007rad);
+            }
+            
+            .warp__5 {
+                transform-origin: 50% 43px;
+                transform: translate(249.0036px,73.3704px) rotate(0.902782rad);
+            }
+            
+            .warp__6 {
+                transform-origin: 50% 43px;
+                transform: translate(261.2837px,98.8296px) rotate(1.124732rad);
+            }
+            
+            .warp__7 {
+                transform-origin: 50% 43px;
+                transform: translate(272.6873px,129.8376px) rotate(1.334184rad);
+            }
+            
+            .warp__8 {
+                transform-origin: 50% 43px;
+                transform: translate(276.0681px,162.9456px) rotate(1.50838rad);
+            }
+            
+            .warp__9 {
+                transform-origin: 50% 43px;
+                transform: translate(278.7244px,198.9336px) rotate(1.456563rad);
+            }
+            
+            .warp__10 {
+                transform-origin: 50% 43px;
+                transform: translate(284.5845px,233.85840000000002px) rotate(1.235234rad);
+            }
+            
+            .warp__11 {
+                transform-origin: 50% 43px;
+                transform: translate(302.294px,264.7896px) rotate(0.988206rad);
+            }
+            
+            .warp__12 {
+                transform-origin: 50% 43px;
+                transform: translate(321.95px,291.8616px) rotate(0.717022rad);
+            }
+            
+            .warp__13 {
+                transform-origin: 50% 43px;
+                transform: translate(356.0577px,312.0216px) rotate(0.450939rad);
+            }
+            
+            .warp__14 {
+                transform-origin: 50% 43px;
+                transform: translate(388.08px,321px) rotate(0.279817rad);
+            }
+            
+            .warp__15 {
+                transform-origin: 50% 43px;
+                transform: translate(404.2729px,325.9416px) rotate(0.11616rad);
+            }
+            
+            .warp__16 {
+                transform-origin: 50% 43px;
+                transform: translate(437.8628px,326.0399px) rotate(-0.110603rad);
+            }
+            
+            .warp__17 {
+                transform-origin: 50% 43px;
+                transform: translate(473.0831px,313.1375px) rotate(-0.432795rad);
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+                
+        <div class="warp" aria-labelledby="warp-label">
+            <span id="warp-label" class="warp__placeholder">
+                Velvet record .com
+            </span>
+    
+            <span aria-role="presentation">
+                <span class="warp__0">
+                    V
+                </span>
+                <span class="warp__1">
+                    e
+                </span>
+                <span class="warp__2">
+                    l
+                </span>
+                <span class="warp__3">
+                    v
+                </span>
+                <span class="warp__4">
+                    e
+                </span>
+                <span class="warp__5">
+                    t
+                </span>
+                <span class="warp__6">
+                     
+                </span>
+                <span class="warp__7">
+                    r
+                </span>
+                <span class="warp__8">
+                    e
+                </span>
+                <span class="warp__9">
+                    c
+                </span>
+                <span class="warp__10">
+                    o
+                </span>
+                <span class="warp__11">
+                    r
+                </span>
+                <span class="warp__12">
+                    d
+                </span>
+                <span class="warp__13">
+                     
+                </span>
+                <span class="warp__14">
+                    .
+                </span>
+                <span class="warp__15">
+                    c
+                </span>
+                <span class="warp__16">
+                    o
+                </span>
+                <span class="warp__17">
+                    m
+                </span>
+            </span>
+        </div>
+    </body>
+</html>
