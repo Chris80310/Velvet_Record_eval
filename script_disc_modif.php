@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $format = array("img/jpg", "img/gif", "img/jpeg", "img/pjpeg", "img/png", "img/x-png", "img/tiff", "image/gif", "image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/tiff", "image/jpg");
         $Taille_max = 5000000;
-
+        // (<= 5Mo)
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
             $Type_img = finfo_file($finfo, $_FILES["picture"]["tmp_name"]);
             finfo_close($finfo);

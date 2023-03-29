@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $picsType = $_FILES["picture"]["type"];
         $picsSize = $_FILES["picture"]["size"];
         $maxSize = 5000000;
-
+        // (<= 5Mo)
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
             $picsType = finfo_file($finfo, $_FILES["picture"]["tmp_name"]);
             finfo_close($finfo);
