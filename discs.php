@@ -40,7 +40,9 @@
                 <h1> Liste des disques (<?=count($resultat)?>)</h1> 
             </div>
             <div class="">
-                <a class=" btn btn-primary px-5 mt-2 ajouter" href="disc_new.php">Ajouter</a>
+                <div class=""><label for="ajouter"><strong>Ajouter : </strong></label></div>
+                <a class=" btn btn-primary px-5 mt-2 ajouter" href="artist_new.php">Artiste</a>
+                <a class=" btn btn-primary px-5 mt-2 ajouter" href="disc_new.php">Disque</a>
             </div>
         </div> 
 

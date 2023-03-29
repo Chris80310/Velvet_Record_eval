@@ -39,7 +39,7 @@
 
     <body class="bg1">
 
-        <div class="container cont_form_disc_new my-5" style="p-auto">
+        <div class="container cont_form my-5" style="p-auto">
 
             <div class="d-flex justify-content-between row ">
   
@@ -57,7 +57,7 @@
                             <div class="col m-auto">
                                 <a class="btn btn-primary row my-3" style="width:130px" href ="disc_form.php?id=<?= $discInfo->disc_id ?>">Modifier</a>
                                 <br><br>
-                                <a class="btn btn-primary row my-3" style="width:130px" href="script_artist_delete.php?id=<?= $discInfo->disc_id ?>">Supprimer</a>
+                                <a class="btn btn-primary row my-3" style="width:130px" href="script_artist_delete.php?id=<?= $discInfo->disc_id ?> "onclick="return confirm('Voulez-vous vraiment supprimer ce vinyle?')">Supprimer</a>
                                 <br><br>
                                 <a class="btn btn-primary row my-3" style="width:130px" href="accueil.php?id=<?= $discInfo->disc_id ?>">Retour</a>
                             </div>                     

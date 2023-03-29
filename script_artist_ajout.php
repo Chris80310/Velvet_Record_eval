@@ -4,15 +4,9 @@
 
 // var_dump($_POST)
 
-    // Récupération du Nom :
-    if (isset($_POST['nom']) && $_POST['nom'] != "") {
-        $nom = $_POST['nom'];
-    }
-    else {
-        $nom = Null;
-    }
+    // Récupération du Nom et url:
 
-    // Récupération de l'URL (même traitement, avec une syntaxe abrégée)
+    $nom = (isset($_POST['nom']) && $_POST['nom'] != "") ? $_POST['nom'] : Null;
     $url = (isset($_POST['url']) && $_POST['url'] != "") ? $_POST['url'] : Null;
 
     // En cas d'erreur, on renvoie vers le formulaire
@@ -54,8 +48,8 @@ catch (Exception $e) {
     die("Fin du script (script_artist_ajout.php)");
 }
 
-// Si OK: redirection vers la page artists.php
-header("Location: artists.php");
+// Si OK: redirection vers la page accueil.php
+header("Location: accueil.php");
 
 // Fermeture du script
 exit;

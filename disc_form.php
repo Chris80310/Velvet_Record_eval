@@ -32,10 +32,10 @@ include('header.php');
     
 
     <body>
-
-        <div class="center my-5"><h1>Modifier un vinyle</h1></div>
     
-        <div class="container my-5" style="p-auto">
+        <div class="container my-5 cont_form" style="p-auto">
+
+            <br><div class="center"><h1>Modifier un vinyle</h1></div>
 
             <div class="d-flex justify-content-between row ">
 
@@ -75,9 +75,11 @@ include('header.php');
                     <br><br>
                     
                     <div class=" col-12 d-flex justify-content-center">
-                        <input id="sb" type="submit" value="Modifier" class="btn btn-primary col-2 mx-5 mt-3" onclick="return confirm('Voulez-vous vraiment modifier ce vinyle?');">
+                        <input id="sb" type="submit" value="Modifier" class="btn btn-primary col-2 mx-5 mt-3" onclick="return confirm('Voulez-vous vraiment modifier ce vinyle?')">
                         <input type="button" value="Retour" onclick="history.back()" class="btn btn-primary col-2 mx-5 mt-3">
                     </div>
+
+                    <br><br>
 
                 </form>
             </div>

@@ -1,3 +1,15 @@
+
+<?php
+  require "db.php";
+  $db = connexionBase();
+  $requete = $db->query("SELECT * FROM artist");
+  $newArtist = $requete->fetchall(PDO::FETCH_OBJ);
+  $requete->closeCursor();
+
+  // Header (banière / logo) :
+  include("header.php");  
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,31 +17,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PDO - Ajout</title>
+
 </head>
-<body>
 
-    <h1>Saisie d'un nouvel artiste</h1>
+    <body class="bg1">
 
-    <a href="artists.php"><button>Retour à la liste des artistes</button></a>
+    <div class="container cont_form mt-5 mb-5" style="p-auto">
 
-    <br>
-    <br>
+        <div class="d-flex justify-content-between row">
 
-    <form action ="script_artist_ajout.php" method="post">
+            <div class="center m-3"><h1><strong>Saisie d'un nouvel artiste</strong></h1></div> 
+            <br><br>
 
-        <label for="nom_for_label">Nom de l'artiste :</label><br>
-        <input type="text" name="nom" id="nom_for_label">
-        <br><br>
+            <form action ="script_artist_ajout.php" method="post" enctype="multipart/form-data">
 
-        <label for="url_for_label">Adresse site internet :</label><br>
-        <input type="text" name="url" id="url_for_label">
-        <br><br>
+                <label for="nom_for_label"><strong>Nom de l'artiste :</strong></label><br>
+                <input type="text" class="col-12" name="nom" id="nom_for_label">
+                <br><br>
 
-        <input type="submit" value="Ajouter">
+                <label for="url_for_label"><strong>Adresse site internet :</strong></label> <br>
+                <input type="text" class="col-12" name="url" id="url_for_label">
+                <br><br>
 
-    </form>
-</body>
+                <div class="col-12 d-flex justify-content-center">
+                    <input class="btn btn-primary col-2 mx-5 mt-3" type="submit" value="Ajouter">
+                    <a class="btn btn-primary col-2 mx-5 mt-3" href="accueil.php">Retour à la liste des artistes</a>
+                </div>
+                
+                <br><br>
 
+            </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    </body>
 </html>
 
 <!-- On voit ici que notre formulaire sera envoyé avec la méthode POST, vers une page nommée script_artist_ajout.php.

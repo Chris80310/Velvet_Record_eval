@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <div class="container cont_form_disc_new my-5" style="p-auto">
+    <div class="container cont_form my-5" style="p-auto">
         <div class="d-flex justify-content-between row ">
 
             <div class="center my-5"><h1>Artiste n°<?= $myArtist->artist_id; ?></h1></div>

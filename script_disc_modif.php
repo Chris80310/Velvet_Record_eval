@@ -18,11 +18,12 @@ if ($title == Null || $year == Null || $genre == Null || $label == Null || $pric
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_FILES["picture"]) && $_FILES["picture"]["error"] == 0) {
-        $format = array("img/jpg", "img/gif", "img/jpeg", "img/pjpeg", "img/png", "img/x-png", "img/tiff", "image/gif", "image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/tiff", "image/jpg");
 
         $picsName = $_FILES["picture"]["name"];
         $picsType = $_FILES["picture"]["type"];
         $picsSize = $_FILES["picture"]["size"];
+
+        $format = array("img/jpg", "img/gif", "img/jpeg", "img/pjpeg", "img/png", "img/x-png", "img/tiff", "image/gif", "image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/tiff", "image/jpg");
         $maxSize = 5000000;
 
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
@@ -32,15 +33,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (in_array($picsType, $format));
              else {
                 move_uploaded_file($_FILES["picture"]["tmp_name"], "assets/jaquettes/" . $_FILES["picture"]["name"]);
-                echo "Votre image a été téléchargé avec succès.";
+                echo "Image téléchargée !";
             }
 
             if ($picsSize > $maxSize)
-            die("La taille de votre image est supérieure à la limite autorisée!");
+            die("Veuillez choisir une image d\'un format inférieur à 5Mo");
 
         else {
-            echo "Erreur: Il y a eu un problème de téléchargement de votre image! 
-            Veuillez réessayer.";
+            echo "Erreur: Téléchargement impossible. Veuillez rééssayer";
         }
     } else {
         echo "Erreur: " . $_FILES["picture"]["error"];
@@ -70,6 +70,6 @@ try {
     die("Fin du script (script_disc_ajout2.php)");
 }
 
-header("Location: accueil.php");
+header("Location: artist_details.php?id");
 
 exit;

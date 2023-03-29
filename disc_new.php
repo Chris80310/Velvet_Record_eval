@@ -24,7 +24,7 @@
 </head>
 <body class="bg1">
 
-    <div class="container cont_form_disc_new mt-5 mb-5" style="p-auto">
+    <div class="container cont_form mt-5 mb-5" style="p-auto">
 
         <div class="d-flex justify-content-between row ">
 
@@ -73,7 +73,7 @@
 
                     <input type="submit" value="Ajouter" class="btn btn-primary col-2 mx-5 mt-3">
                     <input type="reset" value="Corriger" class="btn btn-primary col-2 mx-5 mt-3">
-                    <a class="btn btn-primary col-2 mx-5 mt-3" href="accueil.php" value="Retour à l'accueil"></a>
+                    <a class="btn btn-primary col-2 mx-5 mt-3" href="accueil.php">Retour accueil</a>
                     
                 </div>
                 <br><br>
