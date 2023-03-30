@@ -19,11 +19,11 @@ function connexionBase(){
     {
         // !!! REMPLACER SELON LE POSTE : !!!
 
-        // $pdo = new PDO('mysql:host='.$dbhost.';charset=utf8;dbname='.$db, $dbuser2, $dbpasswd2);
+        $pdo = new PDO('mysql:host='.$dbhost.';charset=utf8;dbname='.$db, $dbuser2, $dbpasswd2);
 
         // OU ://
 
-        $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.';charset=utf8'.'', $dbuser, $dbpasswd); 
+        // $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.';charset=utf8'.'', $dbuser, $dbpasswd); 
 
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;

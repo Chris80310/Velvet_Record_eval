@@ -62,7 +62,7 @@ try {
     $requete->bindValue(":genre", $genre,   PDO::PARAM_STR);
     $requete->bindValue(":label", $label,   PDO::PARAM_STR);
     $requete->bindValue(":price", $price,   PDO::PARAM_STR);
-    $requete->bindValue(":name", $name,   PDO::PARAM_INT);  
+    $requete->bindValue(":name", $name,   PDO::PARAM_STR);  
     $requete->bindvalue(":id", $id, PDO::PARAM_STR);
     $requete->execute();
 
